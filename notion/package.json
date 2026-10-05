@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@notionhq/client": "^5.27.0",
+    "@tryfabric/martian": "^1.2.4",
+    "dotenv": "^18.0.5",
+    "notion-to-md": "^3.1.9"
+  },
+  "type": "module",
+  "name": "notion-sync",
+  "private": true,
+  "scripts": {
+    "sync": "node sync.js",
+    "push": "node sync.js push",
+    "pull": "node sync.js pull"
+  }
+}
