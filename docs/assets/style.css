@@ -334,11 +334,11 @@ td.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 .note, .warn, .lab {
   border-radius: 5px;
   padding: 12px 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  display: block;
   font-size: 0.95rem;
 }
+.note > * + *, .warn > * + *, .lab > * + * { margin-top: 6px; }
+.note > b.t, .warn > b.t, .lab > b.t { display: block; margin-bottom: 6px; }
 .note { background: var(--ok-wash); }
 .warn { background: var(--warn-wash); }
 .note b.t, .warn b.t, .lab b.t {
@@ -347,6 +347,7 @@ td.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+.note > b.t + *, .warn > b.t + *, .lab > b.t + * { margin-top: 0; }
 .note b.t { color: var(--ok); }
 .warn b.t { color: var(--warn); }
 .lab { border: 1px dashed var(--accent); }

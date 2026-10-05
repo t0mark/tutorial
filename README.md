@@ -13,8 +13,10 @@ docs/                  ← GitHub Pages가 배포하는 폴더
 │   └── site.js        ← 목차·진행률·테마 자동 처리
 ├── linux/
 │   └── index.html     ← 리눅스 첫걸음
-└── ipc/
-    └── index.html     ← 프로세스 간 통신
+├── ipc/
+│   └── index.html     ← 프로세스 간 통신
+└── ros2/
+    └── index.html     ← ROS 2 기초
 ```
 
 ## 배포
